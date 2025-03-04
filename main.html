@@ -9,14 +9,14 @@
 </head>
 <body>
     <nav>
-        <p class="navigation">Home</p>
-        <p class="navigation">About</p>
-        <p class="navigation">Skills</p>
-        <p class="navigation">Work</p>
-        <p class="navigation">Contact</p>
+        <a href="#home" class="navigation">Home</a>
+        <a href="#" class="navigation">About</a>
+        <a href="#skills" class="navigation">Skills</a>
+        <a href="#work" class="navigation">Work</a>
+        <a href="#contact" class="navigation">Contact</a>
     </nav>
 
-    <h1>Samuel Hållman</h1>
+    <h1 id="home">Samuel Hållman</h1>
     <h2>About</h2>
     <p>
         Results-driven and technically skilled software developer with a degree in Business Information Technology.
@@ -26,7 +26,7 @@
         Seeking new opportunities for growth and value creation in software development.
     </p>
     
-    <h2>Technical Skills</h2>
+    <h2 id="skills">Technical Skills</h2>
     <ul>
         <li>
             Programming Languages: C#, Java, JavaScript, TypeScript, SQL, Node.js, Python, EJS 
@@ -54,42 +54,53 @@
         </li>
     </ul>
 
-    <h2>Work Experience</h2>
-    <h3>ARKHALTIA Oy (01/2024 - 03/2024)</h3>
-    <ul>
-        <li>
+    <h2 id="work">Work Experience</h2>
+    <div class="work-experience">
+        <ul>
+            <h3>ARKHALTIA Oy (01/2024 - 03/2024)</h3>
+            <li>
             Optimized the performance and SEO visibility of a WordPress site. Improved loading speed from 5 seconds to 1 second. 
-        </li>
-        <li>
-            Improved the site's Google ranking from position 7 to position 2 for the keyword "arkkitehtitoimisto Kouvola", increasing client visibility and customer base. 
-        </li>
-        <li>
-            Enhanced accessibility and user experience. Client received positive feedback on the clarity of the website.
-        </li>
-        <li>
-            Managed project scheduling and client communication. Weekly meetings ensured efficient collaboration and improved results.
-        </li>
-    </ul>
-    <h3>Lauran Jalkahoitola (11/2023)</h3>
-    <ul>
-        <li>
-            Designed and developed a website on the Wix platform. The client previously had no website, leading to a 50% increase in customer traffic.
-        </li>
-        <li>
-            Optimized usability and customer journey for a small business. Negotiation skills were key in aligning the result with client needs and modern web standards.
-        </li>
-    </ul>
+            </li>
+            <li>
+                Improved the site's Google ranking from position 7 to position 2 for the keyword "arkkitehtitoimisto Kouvola", increasing client visibility and customer base. 
+            </li>
+            <li>
+                Enhanced accessibility and user experience. Client received positive feedback on the clarity of the website.
+            </li>
+            <li>
+                Managed project scheduling and client communication. Weekly meetings ensured efficient collaboration and improved results.
+            </li>
+        </ul>
+        <img class="images" src="pictures/arkkitehti.jpg" alt="Arkhaltia">
+    </div>
 
-    <h3>Jalkahoitola Askel (05/2023 - 07/2023)</h3>
-    <ul>
-        <li>
-            Improved website usability and navigation by adding images and simplifying the structure for easier access to information.
-        </li>
-        <li>
-            Worked closely with the client to optimize the website's design, ensuring better support for their business and improved customer focus.
-        </li>
-    </ul>
-    <h2>Contact</h2>
+    <div class="work-experience">
+        <img class="images" src="pictures/jalkahoito.jpg" alt="Jalkahoitola">
+        <ul>
+            <h3>Lauran Jalkahoitola (11/2023)</h3>
+            <li>
+                Designed and developed a website on the Wix platform. The client previously had no website, leading to a 50% increase in customer traffic.
+            </li>
+            <li>
+                Optimized usability and customer journey for a small business. Negotiation skills were key in aligning the result with client needs and modern web standards.
+            </li>
+        </ul>
+    </div>
+        
+    <div class="work-experience">
+        <ul>
+            <h3>Jalkahoitola Askel (05/2023 - 07/2023)</h3>
+            <li>
+                Improved website usability and navigation by adding images and simplifying the structure for easier access to information.
+            </li>
+            <li>
+                Worked closely with the client to optimize the website's design, ensuring better support for their business and improved customer focus.
+            </li>
+        </ul>
+        <img class="images" src="pictures/askel.jpg" alt="Jalkahoitola">
+    </div>
+
+    <h2 id="contact">Contact</h2>
     <ul>
         <li>
             Location: Lahti, Finland

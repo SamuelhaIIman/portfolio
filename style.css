@@ -1,0 +1,31 @@
+html {
+    scroll-behavior: smooth;}
+body {
+    margin: 0px;
+    background-color: whitesmoke;}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: rgb(20, 28, 20);
+}
+.navigation {
+    padding-right: 20px;
+    font-size: 24px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.navigation:hover {
+    background-color: black;
+    border-radius: 25px;
+}
+
+.work-experience{
+    display: flex;
+}
+.images {
+    width: 600px;
+}
