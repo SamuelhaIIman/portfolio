@@ -40,10 +40,16 @@ footer {
     width: 33%;
     border-color: white;
     border-style: solid;
-    display: flex;
 }
 .footer-links {
     text-decoration: none;
     font-size: 24px;
+    color: whitesmoke;
+    display: block;
+}
+#footer-info {
+    color: whitesmoke;
+}
+.footer-headline {
     color: whitesmoke;
 }
