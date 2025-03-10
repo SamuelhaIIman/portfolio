@@ -38,6 +38,18 @@ nav {
     position: relative;
     transition: color 0.2s;
 }
+.navigation:hover:before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: solid;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+}
 .navigation:hover {
     color: rgb(0, 255, 0);
 }
@@ -63,9 +75,12 @@ nav {
 .ABOUT {
     padding: 50px 0px 50px 0px;
 }
+
 .expertise {
     background-color: rgb(236, 255, 232);
     padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: right;
 }
 
 .WORK {
