@@ -88,6 +88,8 @@ nav {
 }
 .work-experience{
     display: flex;
+    align-items: center;
+    padding-top: 50px;
 }
 .images {
     width: 600px;
