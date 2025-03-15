@@ -80,20 +80,23 @@ nav {
 }
 
 .EXPERTISE {
-    background-color: rgb(236, 255, 232);
+    display: flex;
+    justify-content: center;
     width: 100%;
+    background-color: rgb(236, 255, 232);
+}
+.skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 300px;
+    row-gap: 0px;
+    justify-content: center;
 }
 .icons {
     width: 100px;
 }
-.skills-blocks {
-    width: 300px;
-}
 .skills-text {
-    width: 200px;
+    width: 300px;
 }
 
 .WORK {
