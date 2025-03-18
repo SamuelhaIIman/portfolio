@@ -98,8 +98,9 @@
     </div>
 
 
-        <div class="WORK">
-            <h2 id="work">Work Experience</h2>
+    <div class="WORK">
+        <h2 id="work">Work Experience</h2>
+        <div class="work-container">
             <div class="work-experience">
                 <ul>
                     <h3>ARKHALTIA Oy (01/2024 - 03/2024)</h3>
@@ -115,22 +116,24 @@
                 <li>
                     Managed project scheduling and client communication. Weekly meetings ensured efficient collaboration and improved results.
                 </li>
-            </ul>
-            <img class="images" src="pictures/arkkitehti.jpg" alt="Arkhaltia">
+                </ul>
+                <img class="images" src="pictures/arkkitehti.jpg" alt="Arkhaltia">
+            </div>
         </div>
 
-
-        <div class="work-experience" id="lauran-jalkahoitola">
-            <img class="images" src="pictures/jalkahoito.jpg" alt="Jalkahoitola">
-            <ul>
-                <h3>Lauran Jalkahoitola (11/2023)</h3>
-                <li>
-                    Designed and developed a website on the Wix platform. The client previously had no website, leading to a 50% increase in customer traffic.
-                </li>
-                <li>
-                    Optimized usability and customer journey for a small business. Negotiation skills were key in aligning the result with client needs and modern web standards.
-                </li>
-            </ul>
+        <div class="work-container">
+            <div class="work-experience" id="lauran-jalkahoitola">
+                <img class="images" src="pictures/jalkahoito.jpg" alt="Jalkahoitola">
+                <ul>
+                    <h3>Lauran Jalkahoitola (11/2023)</h3>
+                    <li>
+                        Designed and developed a website on the Wix platform. The client previously had no website, leading to a 50% increase in customer traffic.
+                    </li>
+                    <li>
+                        Optimized usability and customer journey for a small business. Negotiation skills were key in aligning the result with client needs and modern web standards.
+                    </li>
+                </ul>
+            </div>
         </div>
 
         
@@ -151,37 +154,21 @@
         
     <div class="contact-information">
         <div>
-            <h2 id="contact">Contact</h2>
-            <ul>
-                <li>
-                    Location: Lahti, Finland
-                </li>
-                <li>
-                    Phone: +358 40 6797988
-                </li>
-                <li>
-                    Email: samuel.hollman@hotmail.com
-                </li>
-                <li>
-                    GitHub: <a href="github.com/SamuelhaIIman">github.com/SamuelhaIIman</a>
-                </li>
-                <li>
-                    LinkedIn: <a href="https://www.linkedin.com/in/samuel-h%C3%A5llman-131217266/">Samuel Hållman</a>
-                </li>
-            </ul>
+            <form class="form">
+                <h2>Let's start the discussion!</h2>
+                <div>
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-input" placeholder="Name..." type="text">
+                </div>
+                <label class="form-label" for="phone">Phone:</label> 
+                <input class="form-input" placeholder="+358 40121234567" type="text">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" placeholder="example@gmail.com" type="text"> <br/>
+                <label class="form-label" for="text">Text:</label>
+                <input class="form-input" placeholder="Type here..." type="text">
+                <input id="form-button" type="submit" value="submit">
+            </form>
         </div>
-
-        <form class="form">
-            <label for="name">Name:</label>
-            <input type="text">
-            <label for="phone">Phone:</label>
-            <input type="text">
-            <label for="email">Email:</label>
-            <input type="text">
-            <label for="text">Text:</label>
-            <input type="text">
-            <input type="submit" value="submit">
-        </form>
     </div>
     
     

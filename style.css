@@ -110,16 +110,35 @@ nav {
 
 .contact-information {
     background-color: rgb(236, 255, 232);
-    height: 300px;
+    height: 500px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 #contact {
     margin: 0px;
 }
 form {
-    display: flex;
-    justify-content: center;
+}
+.form-label {
+    font-size: 20px;
+    color: rgb(150, 150, 150);
+}
+.form-input {
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+#form-button {
+    border-radius: 15px;
+    background-color: rgb(20, 28, 20);
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px 20px 5px 20px;
+}
+#form-button:hover {
+    color: rgb(0, 255, 0);
 }
 
 footer {
