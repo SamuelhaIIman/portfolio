@@ -24,7 +24,14 @@ p {
     color: rgb(150, 150, 150);
     font-size: 20px;
 }
+.headlines {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
 
+
+/* Navigation */
 nav {
     width: 100%;
     height: 60px;
@@ -39,24 +46,13 @@ nav {
     color: whitesmoke;
     text-decoration: none;
     position: relative;
-    transition: color 0.2s;
-}
-.navigation:hover:before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 10px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: solid;
-    width: 40px;
-    height: 40px;
-    border-width: 2px;
+    transition: color 1s;
 }
 .navigation:hover {
     color: rgb(0, 255, 0);
 }
 
+/* Main */
 .main {
     width: 100%;
     height: 1000px;
@@ -75,11 +71,25 @@ nav {
     font-size: 22px;
 }
 
-.ABOUT {
-    padding: 50px 0px 50px 0px;
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-container {
+    margin: 20px;
+}
+#about-text {
+    width: 500px;
+}
+#about-picture {
+    width: 500px;
+    border-radius: 50%;
 }
 
-.EXPERTISE {
+/* Expertise */
+.expertise {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -93,13 +103,23 @@ nav {
     width: 300px;
 }
 
-.WORK {
+/* Work */
+.work {
     padding: 50px 0px 50px 0px;
+    width: 100%;
 }
 .work-experience{
     display: flex;
     align-items: center;
     padding-top: 50px;
+}
+.work-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.work-text {
+    width: 600px;
 }
 .images {
     width: 600px;
@@ -108,9 +128,10 @@ nav {
     background-color: rgb(236, 255, 232);
 }
 
+/* Contact */
 .contact-information {
     background-color: rgb(236, 255, 232);
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +145,7 @@ nav {
     width: 300px;
 }
 .form-input {
-    width: 250px;
+    width: 300px;
     height: 50px;
     border-radius: 15px;
     margin: 10px 0px 20px 0px;
@@ -135,7 +156,7 @@ nav {
     background-color: rgb(20, 28, 20);
     font-size: 20px;
     color: whitesmoke;
-    width: 900px;
+    width: 1000px;
     padding: 5px 20px 5px 20px;
     margin-top: 20px;
 }
@@ -143,24 +164,30 @@ nav {
     color: rgb(0, 255, 0);
 }
 #form-text {
-    width: 900px;
+    width: 1000px;
     height: 200px;
     border-radius: 15px;
     font-size: 20px;
 }
 .form-container {
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
+/* Footer */
 footer {
     width: 100%;
     height: 200px;
     background-color: rgb(20, 28, 20);
     display: flex;
+    justify-content: center;
 }
 .footer-box {
-    width: 33%;
+    width: 300px;
+}
+#footer-navigation {
+    position: relative;
+    left: 80px;
 }
 .footer-links {
     text-decoration: none;
@@ -169,6 +196,7 @@ footer {
     display: block;
     position: relative;
     transition: color 0.2s;
+    width: 65px;
 }
 .footer-links:hover {
     color: rgb(0, 255, 0)
@@ -182,4 +210,12 @@ footer {
 }
 .footer-contact {
     color: rgb(150, 150, 150);
+}
+.footer-icon {
+    width: 50px;
+}
+.footer-icon-link {
+    border: 1px solid red;
+    height: 50px;
+    width: 100px;
 }
