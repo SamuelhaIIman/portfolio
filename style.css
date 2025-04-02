@@ -218,4 +218,5 @@ footer {
     border: 1px solid red;
     height: 50px;
     width: 100px;
+    z-index: 10;
 }
