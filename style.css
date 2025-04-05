@@ -14,11 +14,13 @@ h2 {
 h3 {
     font-size: 30px;
     margin: 0px;
+    margin-bottom: 20px;
 }
 ul {margin: 0px;}
 li {
     font-size: 20px;
     color: rgb(150, 150, 150);
+    margin-bottom: 14px;
 }
 p {
     color: rgb(150, 150, 150);
@@ -123,6 +125,17 @@ nav {
 }
 .images {
     width: 600px;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+.images:hover {
+    opacity: 0.9;
+    background-color: black;
+}
+.work-links {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
 }
 #lauran-jalkahoitola {
     background-color: rgb(236, 255, 232);
@@ -181,6 +194,7 @@ footer {
     background-color: rgb(20, 28, 20);
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 .footer-box {
     width: 300px;
@@ -206,17 +220,16 @@ footer {
 }
 .footer-headline {
     color: rgb(236, 255, 232);
-    margin: 0px;
+    margin: 10px 0px 0px 0px;
 }
 .footer-contact {
     color: rgb(150, 150, 150);
 }
 .footer-icon {
     width: 50px;
+    margin: 10px;
+    position: relative;
 }
 .footer-icon-link {
-    border: 1px solid red;
-    height: 50px;
-    width: 100px;
-    z-index: 10;
+    text-decoration: none;
 }
