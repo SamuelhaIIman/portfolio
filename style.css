@@ -233,3 +233,36 @@ footer {
 .footer-icon-link {
     text-decoration: none;
 }
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 54px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    li {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+    }
+    #explanation {
+        font-size: 18px;
+    }
+    .main {
+        height: 500px;
+    }
+    #about-picture {
+        width: 350px;
+    }
+    .images {
+        width: 400px;
+    }
+    .work-text {
+        width: 450px;
+    }
+}
