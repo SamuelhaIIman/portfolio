@@ -155,14 +155,16 @@ nav {
 .form-label {
     font-size: 20px;
     color: rgb(150, 150, 150);
-    width: 300px;
+    width: 314px;
 }
 .form-input {
     width: 300px;
     height: 50px;
     border-radius: 15px;
-    margin: 10px 0px 20px 0px;
     font-size: 20px;
+}
+.form-margin {
+    margin-left: 40px;
 }
 #form-button {
     border-radius: 15px;
@@ -184,7 +186,7 @@ nav {
 }
 .form-container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: left;
 }
 
 /* Footer */
@@ -268,19 +270,25 @@ footer {
     }
     .form-label {
         position: relative;
+        width: 244px;
+    }
+    .form-container {
+        justify-content: left;
     }
     .form-input {
-        width: 200px;
+        width: 230px;
+        font-size: 16px;
     }
     #form-text {
-        width: 500px;
+        width: 800px;
         height: 150px;
         position: relative;
+        font-size: 16px;
         left: 50%;
         transform: translate(-50%, 0);
     }
     #form-button {
-        width: 500px;
+        width: 800px;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);
