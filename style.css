@@ -297,5 +297,10 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
-
+    .images {
+        width: 300px;
+    }
+    #about-picture {
+        width: 300px;
+    }
 }
