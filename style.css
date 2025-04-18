@@ -313,4 +313,16 @@ footer {
     #about-picture {
         width: 300px;
     }
+    .work-experience {
+        display: block;
+    }
+    .expertise {
+        display: block;
+    }
+    .skills-blocks {
+        margin: 0px;
+    }
+    .skills-text {
+        width: 340px;
+    }
 }
