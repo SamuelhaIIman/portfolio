@@ -253,6 +253,7 @@ footer {
     color: whitesmoke;
 }
 
+
 @media screen and (max-width: 1080px) {
     h1 {
         font-size: 54px;
@@ -315,6 +316,7 @@ footer {
     }
     
 }
+
 
 /* @media screen and (max-width: 720px) {
     .images {
