@@ -11,12 +11,16 @@
 
     
     <nav>
-        <a href="#home" class="navigation">Home</a>
-        <a href="#about" class="navigation">About</a>
-        <a href="#skills" class="navigation">Skills</a>
-        <a href="#work" class="navigation">Work</a>
-        <a href="#contact" class="navigation">Contact</a>
+        <h1 class="navigation-heading">HållDev</h1>
+        <div>
+            <a href="#home" class="navigation">Home</a>
+            <a href="#about" class="navigation">About</a>
+            <a href="#skills" class="navigation">Skills</a>
+            <a href="#work" class="navigation">Work</a>
+            <a href="#contact" class="navigation">Contact</a>
+        </div>
     </nav>
+    <button id="backToTop" title="Go to top">↑</button>
     
 
     <div class="main">
@@ -176,16 +180,16 @@
             <form class="form">
                 <h2 class="headlines">Let's start the discussion!</h2>
                 <div class="form-container">
-                    <label class="form-label" for="name">Name:</label>
-                    <label class="form-label form-margin" for="phone">Phone:</label> 
-                    <label class="form-label form-margin" for="email">Email:</label>
+                    <label class="form-label" for="name">Name*</label>
+                    <label class="form-label form-margin" for="email">Email*</label>
+                    <label class="form-label form-margin" for="phone">Phone</label> 
                 </div>
                 <div class="form-container">
                     <input class="form-input" placeholder="Name..." type="text">
-                    <input id="phone" class="form-input form-margin" placeholder="040 121234567" type="tel" pattern="[0-9]" size="4">
                     <input class="form-input form-margin" placeholder="example@gmail.com" type="email"> <br/>
+                    <input id="phone" class="form-input form-margin" placeholder="040 121234567" type="tel" pattern="[0-9]" size="4">
                 </div>
-                <label class="form-label" for="text">Text:</label> <br/>
+                <label class="form-label" for="text">Message*</label> <br/>
                 <textarea id="form-text" placeholder="Type here..." type="text"></textarea> <br/>
                 <input id="form-button" type="submit" value="SEND MESSAGE">
             </form>
@@ -227,7 +231,9 @@
             </a>
         </div>
     </footer>
-    <div class="copyright">Made By Samuel Hållman ©2025</div>
+    <div class="copyright">
+        © Copyright 2025 | Samuel Hållman | All Rights Reserved
+    </div>
 
 
 </body>

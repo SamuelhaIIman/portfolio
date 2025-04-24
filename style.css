@@ -1,29 +1,32 @@
 html {scroll-behavior: smooth;}
 body {
     margin: 0px;
-    background-color: whitesmoke;
+    background-color: #1d2a35;
 }
 h1 {
     font-size: 64px;
     margin: 0px;
+    color: #ddd;
 }
 h2 {
     margin: 0px;
     font-size: 46px;
+    color: #ddd;
 }
 h3 {
     font-size: 30px;
     margin: 0px;
     margin-bottom: 20px;
+    color: #ddd;
 }
 ul {margin: 0px;}
 li {
     font-size: 20px;
-    color: rgb(150, 150, 150);
+    color: #888888;
     margin-bottom: 14px;
 }
 p {
-    color: rgb(150, 150, 150);
+    color: #888888;
     font-size: 20px;
 }
 .headlines {
@@ -38,21 +41,43 @@ nav {
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
-    background-color: rgb(20, 28, 20);
+    background-color: #15202b;
+}
+.navigation-heading {
+    margin-left: 10px;
+    color: #04AA6D;
 }
 .navigation {
     padding-right: 20px;
     font-size: 24px;
-    color: whitesmoke;
+    color: #ddd;
     text-decoration: none;
     position: relative;
-    transition: color 1s;
+    transition: color 0.5s;
 }
 .navigation:hover {
-    color: rgb(0, 255, 0);
+    color: #04AA6D;
 }
+#backToTop {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    z-index: 100;
+    font-size: 22px;
+    background-color: #04AA6D;
+    color: #ddd;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #backToTop:hover {
+    background-color: #049862;
+  }
 
 /* Main */
 .main {
@@ -66,7 +91,7 @@ nav {
 }
 .home-text {
     width: 600px;
-    color: whitesmoke;
+    color: #ddd;
     margin-left: 10%;
 }
 #explanation {
@@ -78,6 +103,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #15202b;
 }
 #about {
     width: 500px;
@@ -100,19 +126,19 @@ nav {
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
-    background-color: rgb(236, 255, 232);
 }
 .icons {
     width: 100px;
 }
 .skills-text {
-    width: 300px;
+    width: 260px;
+    padding-right: 50px;
 }
-
 /* Work */
 .work {
     padding: 50px 0px 50px 0px;
     width: 100%;
+    background-color: #15202b;
 }
 .work-experience{
     display: flex;
@@ -141,13 +167,9 @@ nav {
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
 }
-#lauran-jalkahoitola {
-    background-color: rgb(236, 255, 232);
-}
 
 /* Contact */
 .contact-information {
-    background-color: rgb(236, 255, 232);
     height: 600px;
     display: flex;
     justify-content: center;
@@ -158,35 +180,41 @@ nav {
 }
 .form-label {
     font-size: 20px;
-    color: rgb(150, 150, 150);
+    color: #ddd;
     width: 314px;
 }
 .form-input {
     width: 300px;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 20px;
+    background-color: #ddd;
+    outline: none;
 }
 .form-margin {
     margin-left: 40px;
 }
 #form-button {
-    border-radius: 15px;
-    background-color: rgb(20, 28, 20);
+    border-radius: 10px;
+    background-color: #04AA6D;
     font-size: 20px;
-    color: whitesmoke;
+    color: #FFFFFF;
     width: 1000px;
     padding: 5px 20px 5px 20px;
     margin-top: 20px;
+    border: 0px;
+    transition: background-color 0.5s;
+    cursor: pointer;
 }
 #form-button:hover {
-    color: rgb(0, 255, 0);
+    background-color: #049862;
 }
 #form-text {
     width: 1000px;
     height: 200px;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 20px;
+    background-color: #ddd;
 }
 .form-container {
     display: flex;
@@ -197,7 +225,7 @@ nav {
 footer {
     width: 100%;
     height: 270px;
-    background-color: rgb(20, 28, 20);
+    background-color: #15202b;
     display: flex;
     justify-content: center;
     z-index: -1;
@@ -212,24 +240,25 @@ footer {
 .footer-links {
     text-decoration: none;
     font-size: 20px;
-    color: rgb(150, 150, 150);
+    color: #888888;
     display: block;
     position: relative;
-    transition: color 0.2s;
+    transition: color 0.5s;
     width: 65px;
+    margin-top: 5px;
 }
 .footer-links:hover {
-    color: rgb(0, 255, 0)
+    color: #04AA6D;
 }
 #footer-info {
-    color: rgb(150, 150, 150);
+    color: #888888;
 }
 .footer-headline {
-    color: rgb(236, 255, 232);
+    color: #ddd;
     margin: 10px 0px 0px 0px;
 }
 .footer-contact {
-    color: rgb(150, 150, 150);
+    color: #888888;
     position: relative;
 }
 .footer-icon {
@@ -242,15 +271,18 @@ footer {
 }
 .footer-icon-text {
     width: 25px;
-    color: rgb(150, 150, 150);
+    color: #ddd;
     position: relative;
     top: 3px;
 }
 .copyright {
     width: 100%;
-    height: 25px;
-    background-color: rgb(15, 20, 15);
-    color: whitesmoke;
+    height: 40px;
+    background-color: #121b25;
+    color: #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
