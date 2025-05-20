@@ -20,34 +20,6 @@ This website includes the following sections:
 
 ---
 
-## Technologies Used
-
-### Frontend
-- HTML5
-- CSS3 / Tailwind CSS
-- JavaScript
-
-### Tools & Platforms
-- Git & GitHub
-- WordPress, Wix, Planeetta Oy
-- XAMPP
-
-### Programming Languages
-- JavaScript, TypeScript
-- Java, C#
-- Node.js, EJS, Python
-
-### Databases
-- MySQL, MongoDB
-
-### Other Skills
-- SEO & Accessibility Optimization
-- Agile methodologies (Kanban)
-- Multilingual communication:  
-  - Finnish (native), English (fluent), Swedish (official proficiency), German (satisfactory), Indonesian (beginner)
-
----
-
 ## Featured Projects
 
 ### [ARKHALTIA Oy](https://www.arkhaltia.fi/)
@@ -75,15 +47,6 @@ Reach out to me via the contact form on the site or directly:
 -  Phone: +358 40 679 7988
 -  [GitHub](https://github.com/SamuelhaIIman)
 -  [LinkedIn](https://www.linkedin.com/in/samuel-h%C3%A5llman-131217266/)
-
----
-
-## Future Improvements
-
-- Add dynamic project filtering (React or Angular)
-- Improve contact form validation and backend integration
-- Host on a cloud platform with CI/CD pipeline
-- Add AI-related showcase projects currently in development
 
 ---
 
