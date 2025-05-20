@@ -75,9 +75,9 @@ nav {
     transition: background-color 0.3s ease;
   }
   
-  #backToTop:hover {
+#backToTop:hover {
     background-color: #049862;
-  }
+}
 
 /* Main */
 .main {
