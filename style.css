@@ -350,23 +350,84 @@ footer {
 }
 
 
-/* @media screen and (max-width: 720px) {
-    .images {
-        width: 300px;
+@media screen and (max-width: 720px) {
+   h1 {
+        font-size: 30px;
     }
-    #about-picture {
-        width: 300px;
+    h2 {
+        font-size: 22px;
     }
-    .work-experience {
-        display: block;
+    h3 {
+        font-size: 12px;
     }
-    .expertise {
-        display: block;
+    li {
+        font-size: 12px;
     }
+    p {
+        font-size: 12px;
+    }
+   .navigation {
+     font-size: 12px;
+     padding-right: 10px;
+   }
+   
+   .main {
+     height: 250px;
+   }
+   .home-text {
+     width: 350px
+   }
+   
+   #about {
+     width: 300px;
+   }
+   #about-text {
+     width: 300px;
+   }
+   .about-container {
+     margin: 0px;
+   }
+   #about-picture {
+     display: none;
+     width: 0px;
+     margin: 0px;
+   }
+   
+   .expertise {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .icons {
+     display:none;
+   }
     .skills-blocks {
         margin: 0px;
     }
     .skills-text {
-        width: 340px;
+        width: 250px;
     }
-} */
+   
+   .work {
+     padding: 0px
+   }
+    .work-experience {
+        width: 400px;
+    }
+   .images {
+     display: none;
+   }
+   .work-experience {
+     padding-top: 10px
+   }
+   
+   #form-text {
+     width: 350px;
+   }
+   #form-button {
+     width: 350px;
+   }
+   .form-container {
+     
+   }
+} 
