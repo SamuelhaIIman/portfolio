@@ -30,8 +30,13 @@ p {
 }
 .headlines {
     width: 100%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px 0 20px 0;
+}
+b {
+    color: #ddd;
 }
 
 
@@ -116,28 +121,11 @@ p {
     }
 
 
-/* Expertise */
-    .expertise {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-    .icons {
-        width: 100px;
-        margin-left: 25%;
-    }
-    .skills-text {
-        width: 260px;
-        padding-right: 50px;
-    }
-
-
 /* Work */
     .work {
         padding: 50px 0px 50px 0px;
         width: 100%;
-        background-color: #15202b;
+        background-color: #1d2a35;
     }
     .work-experience{
         display: flex;
@@ -166,6 +154,27 @@ p {
         background-color: rgb(0, 0, 0);
         border-radius: 10px;
     }
+
+
+/* Expertise */
+    .core-skills {
+        background-color: #15202b;
+    }
+    .expertise {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .icons {
+        width: 100px;
+        margin-left: 25%;
+    }
+    .skills-text {
+        width: 260px;
+        padding-right: 50px;
+    }
+
 
 /* Contact */
     .contact-information {
@@ -418,6 +427,9 @@ p {
     .navigation {
         font-size: 14px;
         padding-right: 10px;
+    }
+    .navigation-heading {
+        margin-left: 5px;
     }
    
     .main {
