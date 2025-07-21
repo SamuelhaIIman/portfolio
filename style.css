@@ -72,7 +72,8 @@ b {
         width: 100%;
         height: 800px;
         background-size: cover;
-        background-image: url(pictures/forest.JPG);
+        background-image: url(pictures/northern_lights.jpg);
+        background-repeat: no-repeat;
         display: flex;
         align-items: center;
     }
