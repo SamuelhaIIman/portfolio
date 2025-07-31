@@ -1,4 +1,4 @@
-# Samuel Hållman – Developer Portfolio
+# Samuel Hållman – Software Developer Portfolio
 
 Welcome to my personal **portfolio website**, created to showcase my work, skills, and passion for web and software development. This site serves as both a professional introduction and a growing archive of the projects I've contributed to or built from scratch.
 

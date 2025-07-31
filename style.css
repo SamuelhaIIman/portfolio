@@ -42,6 +42,7 @@ b {
 
 /* Navigation */
     nav {
+        z-index: 20;
         width: 100%;
         height: 60px;
         display: flex;
