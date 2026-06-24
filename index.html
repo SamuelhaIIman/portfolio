@@ -3,256 +3,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-</head>
-<body>
-
+    <meta name="description" content="Samuel Hållman - Full-Stack Software Engineer portfolio. Performance-focused developer building impactful digital products.">
+    <title>Samuel Hållman | Full-Stack Software Engineer</title>
     
-    <nav>
-        <h1 class="navigation-heading">Hållman</h1>
-        <div>
-            <a href="#home" class="navigation">Home</a>
-            <a href="#about" class="navigation">About</a>
-            <a href="#skills" class="navigation">Skills</a>
-            <a href="#work" class="navigation">Work</a>
-            <a href="#contact" class="navigation">Contact</a>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-500 flex items-center justify-center">
+                        <span class="text-white font-bold text-2xl tracking-tighter">SH</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl tracking-tight">Samuel Hållman</div>
+                        <div class="text-[10px] text-zinc-500 -mt-1">FULL-STACK ENGINEER</div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-8 text-sm">
+                    <a href="#about" class="nav-link text-zinc-400 hover:text-white font-medium">About</a>
+                    <a href="#experience" class="nav-link text-zinc-400 hover:text-white font-medium">Experience</a>
+                    <a href="#skills" class="nav-link text-zinc-400 hover:text-white font-medium">Skills</a>
+                    <a href="#projects" class="nav-link text-zinc-400 hover:text-white font-medium">Projects</a>
+                    <a href="#contact" class="nav-link text-zinc-400 hover:text-white font-medium">Contact</a>
+                </div>
+
+                <div class="hidden md:flex items-center gap-x-3">
+                    <a href="https://github.com/SamuelhaIIman" target="_blank" 
+                       class="w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-2xl transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuel-h%C3%A5llman-131217266/" target="_blank"
+                       class="w-10 h-10 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-2xl transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    
+                    <a href="Samuel_Hållman_CV_Eng.pdf" download
+                       class="px-5 py-2.5 bg-white text-zinc-950 hover:bg-zinc-100 transition-all text-sm font-semibold rounded-3xl flex items-center gap-x-2">
+                        <i class="fas fa-download text-xs"></i>
+                        <span>CV</span>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn"
+                        class="md:hidden w-11 h-11 flex items-center justify-center text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-2xl transition-colors">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
         </div>
     </nav>
-    
 
-    <div class="main">
-        <div>
-            <h1 class="home-text" id="home">Software Developer Samuel Hållman</h1>
-            <p class="home-text" id="explanation">
-                I develop visually stunning websites and optimize inefficient backends for peak performance. 
-                Passionate about creating seamless digital experiences, I'm also exploring AI development to 
-                build smarter and more efficient programs.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="about">
-        <div class="about-container">
-            <h2 id="about">I develop user-experience friendly websites</h2>
-            <p id="about-text">
-                Let’s be honest most websites just don’t work as well as they should. I’m here to change that. My approach is simple: 
-                design websites with <b class="bold-text">intention, clarity, and a focus</b> on delivering the best possible user experience. Visitors should be 
-                able to find what they need quickly and effortlessly, without distractions getting in the way. For you, that means more 
-                customers and more sales.
-                <br/> <br/>
-                Too many sites ignore fundamental UX principles, leading to poor conversions, frustrated users, and wasted opportunities. 
-                I cut through the noise with a straightforward, results-driven design process that makes every website functional, intuitive, and 
-                visually compelling. My mission is to make the web a better, more usable place one purposeful website at a time.
-            </p>
-        </div>
-        <img id="about-picture" src="pictures/samuel.jpg" alt="samuel">
-    </div>
-
-    <div class="work">
-        <div class="work-">
-            <h2 class="headlines" id="work">Work Experience</h2>
-            <div class="work-container">
-                <div class="work-experience">
-                    <ul class="work-text">
-                        <h3>ARKHALTIA Oy (01/2024 - 03/2024)</h3>
-                        <li>
-                        Developed and optimized a WordPress website, reducing page load time from <b>3000ms</b> to <b>200ms</b>, resulting in a
-                        performance improvement of over <b>90%</b>.
-                        </li>
-                        <li>
-                            Improved <b>SEO rankings</b>, achieving top search engine results for at least three targeted keywords.
-                        </li>
-                        <li>
-                            Enhanced the website’s <b>user-friendliness</b>, enabling clients to access key information more easily. This update was
-                            highly appreciated by management for improving daily operations.
-                        </li>
-                    </ul>
-                    <a class="work-links" href="https://www.arkhaltia.fi/">
-                        <img class="images" src="pictures/arkkitehti.jpg" alt="Arkhaltia">
-                    </a>
-                </div>
-            </div>
-    
-            <div class="work-container">
-                <div class="work-experience" id="lauran-jalkahoitola">
-                    <a class="work-links" href="https://www.lauranjalkahoito.com/">
-                        <img class="images" src="pictures/jalkahoito.jpg" alt="Jalkahoitola">
-                    </a>
-                    <ul class="work-text">
-                        <h3>Lauran Jalkahoitola (11/2023)</h3>
-                        <li>
-                            Designed and developed a new company website using Wix. Increased website traffic by <b>30%</b> through improved
-                            structure and design.
-                        </li>
-                        <li>
-                            Reduced website load time from <b>1000ms</b> to <b>300ms</b> through performance optimization.
-                        </li>
-                        <li>
-                            Working in the company taught me the importance of showing the results from iterations. This way we made the
-                            website look like the way she wanted it.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="work-container">
-                <div class="work-experience">
-                    <ul class="work-text">
-                        <h3>Jalkahoitola Askel (05/2023 - 07/2023)</h3>
-                        <li>
-                            Redesigned and optimized the existing website to improve information accessibility. Resulted in a <b>15%</b> increase in
-                            website traffic.
-                        </li>
-                        <li>
-                            Improved <b>SEO rankings</b> for two keywords, securing third place in search engine results.
-                        </li>
-                        <li>
-                            While working on the website, I learned a great deal about <b>building, maintaining, and pricing</b> websites. I
-                            understood what keeps the website relevant.
-                        </li>
-                    </ul>
-                    <a class="work-links" href="https://jalkahoitola-askel.fi/Etusivu/">
-                        <img class="images" src="pictures/askel.jpg" alt="Jalkahoitola">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    <div class="core-skills">
-        <h2 class="headlines" id="skills">Core Skills</h2>
-        <div class="expertise">
-            <div class="skills-blocks">
-                <img class="icons" src="icons/cmd-terminal-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Programming Languages: JavaScript, TypeScript, Node.js, C#, Java, Python. 
-                </p>
-            </div>
-            <div class="skills-blocks">
-                <img class="icons" src="icons/website-layout-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Frontend: React, Angular, HTML, CSS, Tailwind CSS.
-                </p>
-            </div>
-            <div class="skills-blocks">
-                <img class="icons" src="icons/desktop-mobile-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Web Platforms: WordPress, Wix, Planeetta Oy.
-                </p>
-            </div>
-        </div>
-        <div class="expertise">
-            <div class="skills-blocks">
-                <img class="icons" src="icons/database-line-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Databases: MySQL, MongoDB.
-                </p>
-            </div>
-            <div class="skills-blocks">
-                <img class="icons" src="icons/http-icon.png"></img>
-                <p class="skills-text">
-                    Development Tools: XAMPP, Git, GitHub.
-                </p>
-            </div>
-            <div class="skills-blocks">
-                <img class="icons" src="icons/web-code-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Development Practices: Agile methodologies (Kanban), teamwork.
-                </p>
-            </div>
-        </div>
-        <div class="expertise">
-            <div class="skills-blocks" id="grid7">
-                <img class="icons" src="icons/programmer-computer-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Other Skills: SEO, accessibility, website optimization.
-                </p>
-            </div>
-            <div class="skills-blocks" id="grid8">
-                <img class="icons" src="icons/language-translator-icon-fixed.png"></img>
-                <p class="skills-text">
-                    Languages: Finnish (native), English (C1), Swedish (B1), German (A2), Indonesian (A1).
-                </p>
-            </div>
-        </div>
-     </div>
-
-
-    <div class="projects">
-        <div>
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40 bg-zinc-950/95 pt-20">
+        <div class="px-6 py-8 flex flex-col gap-y-6 text-lg">
+            <a href="#about" class="mobile-nav-link px-4 py-3 text-zinc-300 hover:text-white">About</a>
+            <a href="#experience" class="mobile-nav-link px-4 py-3 text-zinc-300 hover:text-white">Experience</a>
+            <a href="#skills" class="mobile-nav-link px-4 py-3 text-zinc-300 hover:text-white">Skills</a>
+            <a href="#projects" class="mobile-nav-link px-4 py-3 text-zinc-300 hover:text-white">Projects</a>
+            <a href="#contact" class="mobile-nav-link px-4 py-3 text-zinc-300 hover:text-white">Contact</a>
             
+            <div class="pt-6 border-t border-zinc-800 flex flex-col gap-y-3">
+                <a href="https://github.com/SamuelhaIIman" target="_blank" class="flex items-center gap-x-3 px-4 py-3 text-zinc-400">
+                    <i class="fab fa-github w-5"></i> <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/samuel-h%C3%A5llman-131217266/" target="_blank" class="flex items-center gap-x-3 px-4 py-3 text-zinc-400">
+                    <i class="fab fa-linkedin w-5"></i> <span>LinkedIn</span>
+                </a>
+                <a href="Samuel_Hållman_CV_Eng.pdf" download class="mt-2 mx-4 flex items-center justify-center gap-x-2 bg-white text-zinc-950 font-semibold py-3.5 rounded-3xl">
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
+                </a>
+            </div>
         </div>
     </div>
+
+    <header class="min-h-[100dvh] flex items-center pt-16 relative overflow-hidden">
+        <div class="absolute inset-0 hero-bg"></div>
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill-rule=%22evenodd%22%3E%3Cpath fill=%22%2318181b%22 fill-opacity=%220.4%22 d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-10V8h-2v16h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 6v-4H4v4H0v2h4v4h2V8h4V6H6z%22/%3E%3C/g%3E%3C/svg%27'); background-size: 60px 60px;"></div>
         
-    <div class="contact-information" id="contact">
-        <div>
-            <form class="form" method="POST" action="https://formsubmit.co/samuel.hollman@hotmail.com">
-                <h2 class="headlines">Let's start the discussion!</h2>
-                <div class="from-column">
-                    <div class="form-container">
-                        <label class="form-label" for="name">Name*</label>
-                        <input class="form-input" placeholder="Name..." type="text" required>
+        <canvas id="hero-canvas" class="absolute inset-0 z-10 opacity-40"></canvas>
+        
+        <div class="max-w-5xl mx-auto px-6 relative z-20 text-center">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 mb-6">
+                <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium text-emerald-400">Open to full-time opportunities</span>
+            </div>
+            
+            <h1 class="text-7xl md:text-8xl font-bold tracking-tighter mb-4">
+                Samuel Hållman
+            </h1>
+            
+            <div class="text-3xl md:text-4xl font-semibold tracking-tight mb-6">
+                <span class="gradient-text">Full-Stack Software Engineer</span>
+            </div>
+            
+            <p class="max-w-2xl mx-auto text-xl text-zinc-400 mb-10">
+                I build high-performance web and mobile applications that deliver 
+                measurable business impact through clean code, thoughtful UX, and relentless optimization.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })" 
+                        class="group px-8 py-4 bg-indigo-600 hover:bg-indigo-500 transition-all text-white font-semibold rounded-3xl flex items-center justify-center gap-x-3 text-lg shadow-lg shadow-indigo-950">
+                    <span>Explore Projects</span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </button>
+                
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-8 py-4 border border-zinc-700 hover:bg-zinc-900 transition-all font-semibold rounded-3xl text-lg flex items-center justify-center gap-x-3">
+                    <span>Get in touch</span>
+                </button>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-x-8 text-sm">
+                <div class="flex items-center gap-x-2 text-zinc-500">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lahti, Finland</span>
+                </div>
+                <div class="flex items-center gap-x-2 text-zinc-500">
+                    <i class="fas fa-globe"></i>
+                    <span>Remote / On-site</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block">
+            <div class="flex flex-col items-center text-xs tracking-[3px] text-zinc-500">
+                <div>SCROLL TO BEGIN</div>
+                <i class="fas fa-chevron-down mt-1.5 animate-bounce"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+        <div class="grid md:grid-cols-12 gap-x-12 items-center">
+            <div class="md:col-span-5 mb-10 md:mb-0">
+                <div class="relative mx-auto w-72 h-72 md:w-80 md:h-80">
+                    <div class="absolute inset-0 rounded-[4rem] bg-gradient-to-br from-indigo-500/20 via-violet-500/10 to-transparent"></div>
+                    <div class="absolute inset-[6px] rounded-[3.5rem] bg-zinc-900 flex items-center justify-center overflow-hidden border border-zinc-800">
+                        <div class="w-full h-full bg-zinc-950 flex flex-col items-center justify-center">
+                            <div class="w-28 h-28 rounded-full bg-gradient-to-br from-indigo-400 to-violet-500 flex items-center justify-center mb-4">
+                                <span class="text-6xl font-bold text-white tracking-tighter">SH</span>
+                            </div>
+                            <div class="text-center">
+                                <div class="font-semibold text-xl">Samuel Hållman</div>
+                                <div class="text-xs text-zinc-500 mt-0.5">BBA • Software Engineer</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-container">
-                        <label class="form-label" for="email">Email*</label>
-                        <input class="form-input" placeholder="example@gmail.com" type="email" required>
+                    <div class="absolute -inset-3 rounded-[4.5rem] border border-zinc-800/60"></div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-7">
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-400 mb-3">WHO I AM</div>
+                <h2 class="section-header tracking-tighter mb-6">Agile developer focused on<br>real-world impact.</h2>
+                
+                <div class="prose prose-invert max-w-none text-[15px] text-zinc-300 leading-relaxed">
+                    <p class="mb-5">I'm a results-driven full-stack engineer passionate about building fast, accessible, and scalable digital products. 
+                    I thrive in environments where performance optimization and user experience directly translate into business growth.</p>
+                    
+                    <p>With hands-on experience across web platforms, Android development, and machine learning projects, 
+                    I bring a versatile skill set and a strong bias toward shipping high-quality work. I enjoy collaborating in agile teams 
+                    and continuously leveling up my craft with new technologies.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+                    <div class="stat-card bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                        <div class="text-3xl font-semibold text-white">3+</div>
+                        <div class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Years Professional</div>
                     </div>
-                    <div class="form-container">
-                        <label class="form-label" for="phone">Phone</label> 
-                        <input id="phone" class="form-input" placeholder="040 121234567" type="tel" pattern="[0-9]" size="4">
+                    <div class="stat-card bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                        <div class="text-3xl font-semibold text-white">50%</div>
+                        <div class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Faster App Startup</div>
+                    </div>
+                    <div class="stat-card bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                        <div class="text-3xl font-semibold text-white">+40%</div>
+                        <div class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Organic Traffic Growth</div>
+                    </div>
+                    <div class="stat-card bg-zinc-900 border border-zinc-800 rounded-3xl p-5">
+                        <div class="text-3xl font-semibold text-white">5</div>
+                        <div class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Featured Projects</div>
                     </div>
                 </div>
-                <label class="form-label" for="text">Message*</label> <br/>
-                <textarea id="form-text" placeholder="Type here..." type="text"></textarea> <br/>
-                <input id="form-button" type="submit" value="SEND MESSAGE">
-            </form>
+            </div>
         </div>
-    </div>
-    
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-box">
-                <h2>Hållman</h2>
-                <p id="footer-info">
-                    My aim is to develop websites and learn backend skills. My passion is programming.
-                    Let's develop new efficient programs.
-                </p>
-            </div>
-            <div class="footer-box" id="footer-navigation">
-                <h3 class="footer-headline">Navigation</h3>
-                <a href="#home" class="footer-links">Home</a> 
-                <a href="#about" class="footer-links">About</a> 
-                <a href="#skills" class="footer-links">Skills</a> 
-                <a href="#work" class="footer-links">Work</a> 
-                <a href="#contact" class="footer-links">Contact</a>
-            </div>
-            <div class="footer-box">
-                <h3 class="footer-headline">Contact Me</h3>
-                <p class="footer-contact">
-                    <img class="footer-icon-text" src="icons/mail.png" alt="email"> 
-                    samuel.hollman@hotmail.com
-                </p>
-                <p class="footer-contact">
-                    <img class="footer-icon-text" src="icons/phone.png" alt="email">
-                    +358406797988
-                </p>
-                <a href="https://github.com/SamuelhaIIman" class="footer-icon-link">
-                    <img class="footer-icon" src="icons/github.png" alt="github">
+    </section>
+
+    <section id="experience" class="bg-zinc-900 py-16 border-y border-zinc-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex items-end justify-between mb-10">
+                <div>
+                    <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-400 mb-1">CAREER PATH</div>
+                    <h2 class="section-header tracking-tighter">Professional Experience</h2>
+                </div>
+                <a href="Samuel_Hållman_CV_Eng.pdf" download class="hidden md:flex items-center gap-x-2 text-sm text-indigo-400 hover:text-indigo-300 font-medium">
+                    <span>Download full CV</span> <i class="fas fa-arrow-right text-xs"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/samuel-h%C3%A5llman-131217266/" class="footer-icon-link">
-                    <img class="footer-icon" src="icons/linkedin.png" alt="github">
-                </a>
+            </div>
+            
+            <div class="relative pl-8 md:pl-10 space-y-12 before:absolute before:left-[31px] before:top-2 before:bottom-4 before:w-[1px] before:bg-zinc-700">
+                
+                <div class="relative">
+                    <div class="ml-4">
+                        <div class="flex flex-wrap items-baseline gap-x-3">
+                            <h3 class="font-semibold text-xl">Full-Stack Software Developer</h3>
+                            <span class="text-sm px-3 py-0.5 bg-emerald-950 text-emerald-400 rounded-full font-medium">Current</span>
+                        </div>
+                        <div class="text-indigo-400 font-medium">Ridesolutions Oy • Lahti</div>
+                        <div class="text-xs text-zinc-500 mt-0.5">January 2026 — Present</div>
+                        
+                        <ul class="mt-4 text-sm space-y-2 text-zinc-300">
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Resolved Google Play 16KB page size compliance for legacy Android app (Android 15+)</li>
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Improved app startup time from ~1200ms to ~600ms through dependency modernization &amp; Kotlin migration</li>
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Eliminated recurring fake account spam by migrating nameservers to Cloudflare + security rules</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="ml-4">
+                        <h3 class="font-semibold text-xl">Full-Stack Software Developer</h3>
+                        <div class="text-indigo-400 font-medium">ARKHALTIA Oy (Architecture firm) • Kouvola</div>
+                        <div class="text-xs text-zinc-500 mt-0.5">January 2024 — December 2024</div>
+                        
+                        <ul class="mt-4 text-sm space-y-2 text-zinc-300">
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Reduced WordPress load time from 5s to 1s via comprehensive performance optimization</li>
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Achieved top search rankings for 3 key terms and increased organic traffic by ~40%</li>
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Built responsive, intuitive interfaces with Elementor that received excellent stakeholder feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="ml-4">
+                        <h3 class="font-semibold text-xl">Website Developer (Wix)</h3>
+                        <div class="text-indigo-400 font-medium">Lauran Jalkahoitola</div>
+                        <div class="text-xs text-zinc-500 mt-0.5">November 2023 — December 2023</div>
+                        
+                        <ul class="mt-4 text-sm space-y-2 text-zinc-300">
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Designed and launched responsive Wix site that increased customer inquiries by ~30% in 3 months</li>
+                            <li class="flex gap-x-2"><span class="text-indigo-400 mt-1.5">•</span> Optimized load speed from 1000ms to 300ms through image optimization, minification &amp; caching</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-400 mb-2">TECHNICAL EXPERTISE</div>
+            <h2 class="section-header tracking-tighter">Skills &amp; Technologies</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fas fa-code text-xl text-indigo-400"></i>
+                    <h3 class="font-semibold text-lg">Languages</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">JavaScript / TypeScript</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Python</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Kotlin</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Java</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">C#</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">PHP</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Node.js</span>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fas fa-palette text-xl text-indigo-400"></i>
+                    <h3 class="font-semibold text-lg">Frontend</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">React</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Angular</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Tailwind CSS</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">HTML5 / CSS3</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Three.js</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">EJS</span>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fas fa-server text-xl text-indigo-400"></i>
+                    <h3 class="font-semibold text-lg">Backend &amp; Data</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Express.js</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">MySQL</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">MongoDB</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">AWS (RDS, EC2)</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Axios / Cheerio</span>
+                </div>
+            </div>
+            
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-7">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fas fa-tools text-xl text-indigo-400"></i>
+                    <h3 class="font-semibold text-lg">Tools &amp; Practices</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Git / GitHub</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Android Studio</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Gradle</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">WordPress / Elementor</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Wix</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">Agile / Kanban</span>
+                    <span class="skill-tag px-4 py-1.5 text-sm bg-zinc-950 border border-zinc-700 rounded-2xl cursor-default">SEO &amp; Performance</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8 text-xs text-zinc-500">
+            Always learning • Currently exploring: Next.js, Rust, advanced ML deployment
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-10 gap-y-4">
+            <div>
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-400 mb-2">SELECTED WORK</div>
+                <h2 class="section-header tracking-tighter">Featured Projects</h2>
+            </div>
+            
+            <div class="flex flex-wrap gap-2" id="project-filters">
+                <button data-filter="all" class="project-filter-btn active px-5 py-2 text-sm font-medium bg-zinc-900 border border-zinc-700 hover:border-zinc-600 rounded-3xl">All</button>
+                <button data-filter="web" class="project-filter-btn px-5 py-2 text-sm font-medium bg-zinc-900 border border-zinc-700 hover:border-zinc-600 rounded-3xl">Web</button>
+                <button data-filter="mobile" class="project-filter-btn px-5 py-2 text-sm font-medium bg-zinc-900 border border-zinc-700 hover:border-zinc-600 rounded-3xl">Mobile</button>
+                <button data-filter="ml" class="project-filter-btn px-5 py-2 text-sm font-medium bg-zinc-900 border border-zinc-700 hover:border-zinc-600 rounded-3xl">ML / AI</button>
+            </div>
+        </div>
+        
+        <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+        
+        <div class="text-center mt-10">
+            <p class="text-sm text-zinc-400">More projects are in active development. Check back soon or reach out to collaborate.</p>
+        </div>
+    </section>
+
+    <section class="bg-zinc-900 border-y border-zinc-800 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-x-12 items-center">
+                <div class="md:col-span-5 mb-8 md:mb-0">
+                    <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-400 mb-2">EDUCATION</div>
+                    <h2 class="section-header tracking-tighter leading-none">Bachelor of Business<br>Administration</h2>
+                    <div class="mt-2 text-lg text-zinc-400">Business Information Technology</div>
+                </div>
+                
+                <div class="md:col-span-7">
+                    <div class="bg-zinc-950 border border-zinc-800 rounded-3xl p-8">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="font-semibold text-2xl">LAB University of Applied Sciences</div>
+                                <div class="text-zinc-400">Lahti, Finland • August 2021 — November 2024</div>
+                            </div>
+                            <div class="text-right">
+                                <div class="inline-block px-4 py-1 bg-emerald-950 text-emerald-400 text-xs font-semibold tracking-wider rounded-full">COMPLETED</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 text-sm text-zinc-300 leading-relaxed">
+                            Focused on full-stack development, software architecture, server-side programming, databases, 
+                            game design, teamwork, and leadership. Combined technical depth with business acumen.
+                        </div>
+                        
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl">Full-Stack Development</span>
+                            <span class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl">Software Architecture</span>
+                            <span class="px-3 py-1 text-xs bg-zinc-900 border border-zinc-700 rounded-2xl">Databases &amp; Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-indigo-400 mb-2">LET'S BUILD SOMETHING GREAT</div>
+            <h2 class="section-header tracking-tighter">Ready to collaborate?</h2>
+            <p class="mt-3 max-w-md mx-auto text-zinc-400">I'm currently open to full-time roles, freelance projects, and interesting collaborations.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-5 gap-8">
+            <div class="md:col-span-2 space-y-8">
+                <div>
+                    <div class="text-xs uppercase tracking-widest text-zinc-500 mb-2">EMAIL</div>
+                    <a href="mailto:samuel.hollman@hotmail.com" class="text-xl font-medium hover:text-indigo-400 transition-colors">samuel.hollman@hotmail.com</a>
+                </div>
+                
+                <div>
+                    <div class="text-xs uppercase tracking-widest text-zinc-500 mb-2">PHONE</div>
+                    <a href="tel:+358406797988" class="text-xl font-medium hover:text-indigo-400 transition-colors">+358 40 679 7988</a>
+                </div>
+                
+                <div>
+                    <div class="text-xs uppercase tracking-widest text-zinc-500 mb-3">FIND ME ONLINE</div>
+                    <div class="flex gap-x-4">
+                        <a href="https://github.com/SamuelhaIIman" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-2xl border border-zinc-700 hover:border-indigo-500 hover:text-indigo-400 transition-all">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-h%C3%A5llman-131217266/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-2xl border border-zinc-700 hover:border-indigo-500 hover:text-indigo-400 transition-all">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://samuelhaiiman.github.io/portfolio/" target="_blank" class="w-12 h-12 flex items-center justify-center rounded-2xl border border-zinc-700 hover:border-indigo-500 hover:text-indigo-400 transition-all">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="pt-4">
+                    <a href="Samuel_Hållman_CV_Eng.pdf" download 
+                       class="inline-flex items-center gap-x-3 px-6 py-3.5 bg-white hover:bg-zinc-100 transition text-zinc-950 font-semibold rounded-3xl text-sm">
+                        <i class="fas fa-download"></i>
+                        <span>Download my CV</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-3 bg-zinc-900 border border-zinc-800 rounded-3xl p-8">
+                <form id="contact-form" action="https://formsubmit.co/samuel.hollman@hotmail.com" method="POST" class="space-y-5">
+                    <input type="hidden" name="_subject" value="New message from Samuel Hållman Portfolio">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="text-xs font-medium text-zinc-400 block mb-1.5">YOUR NAME</label>
+                            <input type="text" name="name" id="name" required class="w-full bg-zinc-950 border border-zinc-700 focus:border-indigo-500 rounded-2xl px-5 py-3 text-sm outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="text-xs font-medium text-zinc-400 block mb-1.5">YOUR EMAIL</label>
+                            <input type="email" name="email" id="email" required class="w-full bg-zinc-950 border border-zinc-700 focus:border-indigo-500 rounded-2xl px-5 py-3 text-sm outline-none transition-colors">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="text-xs font-medium text-zinc-400 block mb-1.5">MESSAGE</label>
+                        <textarea name="message" id="message" rows="5" required placeholder="Hi Samuel, I'd love to discuss a full-stack role..." 
+                                  class="w-full bg-zinc-950 border border-zinc-700 focus:border-indigo-500 rounded-3xl px-5 py-4 text-sm outline-none resize-y min-h-[120px] transition-colors"></textarea>
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 transition-all font-semibold rounded-3xl flex items-center justify-center gap-x-2 text-sm tracking-wider">
+                        <span>SEND MESSAGE</span>
+                        <i class="fas fa-paper-plane text-xs"></i>
+                    </button>
+                    
+                    <p class="text-[10px] text-center text-zinc-500">This form sends directly to my email. I'll reply within 24–48 hours.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-zinc-800 py-8 text-xs text-zinc-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-y-3 text-center md:text-left">
+            <div>© 2026 Samuel Hållman. Crafted with care in Lahti, Finland.</div>
+            <div class="flex items-center gap-x-5">
+                <span>Made with HTML, CSS &amp; JavaScript</span>
+                <span class="hidden md:inline">•</span>
+                <span class="text-emerald-400">Open to opportunities</span>
             </div>
         </div>
     </footer>
-    <div class="copyright">
-        © Copyright 2025 | Samuel Hållman | All Rights Reserved
+
+    <div id="project-modal" onclick="if (event.target.id === 'project-modal') closeModal()" class="hidden fixed inset-0 z-[70] bg-black/90 flex items-center justify-center p-4 md:p-8">
+        <div onclick="event.stopImmediatePropagation()" class="modal bg-zinc-900 border border-zinc-700 w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl max-h-[90dvh] flex flex-col">
+            
+            <div class="px-8 pt-7 pb-5 flex items-start justify-between border-b border-zinc-800">
+                <div>
+                    <div id="modal-type" class="uppercase tracking-[2px] text-[10px] font-bold text-indigo-400"></div>
+                    <h3 id="modal-title" class="text-3xl font-semibold tracking-tight mt-1 pr-8"></h3>
+                </div>
+                <button onclick="closeModal()" class="w-10 h-10 flex-shrink-0 flex items-center justify-center text-2xl text-zinc-400 hover:text-white transition-colors">×</button>
+            </div>
+            
+            <div class="overflow-y-auto flex-1 p-8 space-y-8 text-sm">
+                <div>
+                    <div class="uppercase text-xs tracking-[2px] font-semibold text-emerald-400 mb-2">KEY IMPACT</div>
+                    <div id="modal-impact" class="text-lg leading-tight text-white"></div>
+                </div>
+                
+                <div>
+                    <div class="uppercase text-xs tracking-[2px] font-semibold text-zinc-400 mb-2">ABOUT THE PROJECT</div>
+                    <div id="modal-desc" class="text-zinc-200 leading-relaxed"></div>
+                </div>
+                
+                <div>
+                    <div class="uppercase text-xs tracking-[2px] font-semibold text-zinc-400 mb-3">TECHNOLOGIES USED</div>
+                    <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+            
+            <div class="border-t border-zinc-800 px-8 py-5 flex flex-col sm:flex-row gap-3 bg-zinc-950/70">
+                <a id="modal-github" href="#" target="_blank" 
+                   class="flex-1 flex items-center justify-center gap-x-2.5 border border-zinc-700 hover:bg-zinc-900 transition-colors font-medium py-3.5 rounded-3xl text-sm">
+                    <i class="fab fa-github"></i>
+                    <span>View on GitHub</span>
+                </a>
+                <a id="modal-demo" href="#" target="_blank" 
+                   class="flex-1 flex items-center justify-center gap-x-2.5 bg-white text-zinc-950 hover:bg-zinc-200 transition-colors font-semibold py-3.5 rounded-3xl text-sm">
+                    <span>View Live Demo</span>
+                    <i class="fas fa-external-link-alt text-xs"></i>
+                </a>
+            </div>
+        </div>
     </div>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
