@@ -27,14 +27,9 @@ This is a complete redesign of my previous portfolio. The new version features:
 ### Run Locally
 
 1. Clone or download this repository
-2. Open `samuel-hallman-portfolio.html` in any modern browser
+2. Open `index.html` in any modern browser
 3. That's it — no build step, no npm install required
 
-### Add the CV
-
-Make sure `Samuel_Hållman_CV_Eng.pdf` is in the same folder as the HTML file (it already is in this repo).
-
----
 
 ## 🛠 Tech Stack
 
@@ -50,10 +45,11 @@ Make sure `Samuel_Hållman_CV_Eng.pdf` is in the same folder as the HTML file (i
 
 ```
 .
-├── samuel-hallman-portfolio.html   # The complete portfolio (single file)
-├── Samuel_Hållman_CV_Eng.pdf       # Your downloadable CV
-├── README.md                       # This file
-└── (optional) /images              # Add screenshots here later
+├── index.html
+├── style.css
+├── script.js
+├── Samuel_Hållman_CV_Eng.pdf
+├── README.md 
 ```
 
 ---
