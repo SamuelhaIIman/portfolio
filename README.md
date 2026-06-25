@@ -2,7 +2,7 @@
 
 A modern, fast, and fully responsive single-file portfolio website showcasing my work as a performance-focused full-stack developer.
 
-**Live Demo:** [Coming soon – deploy to GitHub Pages]
+**Live Demo:** (https://samuelhaiiman.github.io/portfolio/)
 
 ---
 
