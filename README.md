@@ -6,7 +6,7 @@ A modern, fast, and fully responsive single-file portfolio website showcasing my
 
 ---
 
-## ✨ What's New (2026 Version)
+## What's New (2026 Version)
 
 This is a complete redesign of my previous portfolio. The new version features:
 
@@ -22,7 +22,7 @@ This is a complete redesign of my previous portfolio. The new version features:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Run Locally
 
@@ -41,7 +41,7 @@ This is a complete redesign of my previous portfolio. The new version features:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -54,7 +54,7 @@ This is a complete redesign of my previous portfolio. The new version features:
 
 ---
 
-## 🎨 Customization Guide
+## Customization Guide
 
 ### 1. Adding New Projects (Easiest Way)
 
@@ -118,7 +118,7 @@ Replace the placeholder avatar (the circle with "SH") with your own photo. Look 
 
 ---
 
-## 📧 Contact Form – How It Works
+## Contact Form
 
 The contact form is connected to **Formsubmit.co** and sends real emails to `samuel.hollman@hotmail.com`.
 
@@ -137,7 +137,7 @@ The contact form is connected to **Formsubmit.co** and sends real emails to `sam
 
 ---
 
-## 🌍 Deployment (Recommended: GitHub Pages)
+## Deployment (Recommended: GitHub Pages)
 
 This portfolio is perfect for GitHub Pages:
 
@@ -153,7 +153,7 @@ This portfolio is perfect for GitHub Pages:
 
 ---
 
-## 📋 Sections Overview
+## Sections Overview
 
 | Section          | Description                                      |
 |------------------|--------------------------------------------------|
@@ -167,13 +167,13 @@ This portfolio is perfect for GitHub Pages:
 
 ---
 
-## 📜 License
+## License
 
 This portfolio is built for personal and professional use. Feel free to use the structure as inspiration, but please credit me if you reuse large parts of the code.
 
 ---
 
-## 🤝 Get In Touch
+## Get In Touch
 
 - **Email:** [samuel.hollman@hotmail.com](mailto:samuel.hollman@hotmail.com)
 - **Phone:** +358 40 679 7988
@@ -182,9 +182,5 @@ This portfolio is built for personal and professional use. Feel free to use the 
 
 ---
 
-**Built with ❤️ in Lahti, Finland**  
-*Last updated: June 2026*
-
----
-
-*This README was generated for the new modern portfolio (2026). The previous version is archived in git history if needed.*
+**Built with in Lahti, Finland**  
+*Last updated: July 2026*
