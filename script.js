@@ -238,12 +238,12 @@ function renderProjects(filteredProjects) {
         card.className = `project-card bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden flex flex-col h-full cursor-pointer group`;
         
         card.innerHTML = `
-            <div class="h-2.5 bg-gradient-to-r from-indigo-500 via-violet-500 to-fuchsia-500"></div>
+            <div class="h-2.5 bg-gradient-to-r from-green-900 via-green-600 to-green-400"></div>
             
             <div class="p-7 flex-1 flex flex-col">
                 <!-- Icon + Type -->
                 <div class="flex items-center justify-between mb-5">
-                    <div class="w-12 h-12 rounded-2xl bg-zinc-950 border border-zinc-700 flex items-center justify-center text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                    <div class="w-12 h-12 rounded-2xl bg-zinc-950 border border-zinc-700 flex items-center justify-center text-green-600 group-hover:text-green-900 transition-colors">
                         <i class="fas ${project.icon} text-3xl"></i>
                     </div>
                     <div class="text-[10px] px-3 py-1 rounded-full bg-zinc-800 text-zinc-400 font-medium tracking-wider">${project.type.split(' @ ')[0]}</div>
@@ -263,7 +263,7 @@ function renderProjects(filteredProjects) {
                 
                 <div class="pt-4 border-t border-zinc-800 flex items-center justify-between text-xs">
                     <button onclick="event.stopImmediatePropagation(); showProjectModal(${project.id});" 
-                            class="font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-x-1.5 group-hover:gap-x-2 transition-all">
+                            class="font-semibold text-green-600 hover:text-green-900 flex items-center gap-x-1.5 group-hover:gap-x-2 transition-all">
                         VIEW DETAILS <i class="fas fa-arrow-right text-[10px]"></i>
                     </button>
                     
@@ -476,8 +476,6 @@ function initializePortfolio() {
         });
     }
     
-    console.log('%c[Portfolio] Samuel Hållman portfolio initialized successfully.', 'color:#52525b');
-    
     setTimeout(() => {
         const firstCard = document.querySelector('#projects-grid .project-card');
         if (firstCard) {
@@ -500,5 +498,3 @@ window.addNewProject = function(newProject) {
     document.getElementById('projects-grid').innerHTML = '';
     renderProjects(filtered);
 };
-
-console.log('%c[Portfolio] Pro tip: Use window.addNewProject({ ... }) in console to test adding new projects dynamically!', 'color:#3f3f46');
