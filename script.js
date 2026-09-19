@@ -160,59 +160,72 @@ function initializeTailwind() {
                 }
             });
         }
-        
-        // Projects data
+    
         const projectsData = [
-            {
-                id: 1,
-                title: "3D Interactive Portfolio",
-                shortDesc: "Immersive 3D web portfolio experience built with Three.js featuring interactive models, camera controls, and dynamic lighting.",
-                longDesc: "A fully interactive 3D portfolio website showcasing creative work. Users can explore a virtual space, rotate 3D objects, trigger particle effects, and enjoy smooth camera transitions powered by Three.js and GSAP. Built to push the boundaries of what's possible in the browser.",
-                category: "web",
-                tech: ["JavaScript", "Three.js", "WebGL", "GSAP", "HTML5", "CSS3"],
-                icon: "fa-cube",
-                image: "https://picsum.photos/seed/3dportfolio/800/500",
-                impact: "Demonstrated advanced front-end capabilities and creative coding skills. Served as a strong portfolio piece highlighting WebGL performance tuning.",
-                github: "https://github.com/SamuelhaIIman",
-                demo: "#",
-                type: "Personal Project"
-            },
-            {
-                id: 2,
-                title: "Face Recognition & Tracking System",
-                shortDesc: "Real-time computer vision app that detects, recognizes, and tracks faces in live video streams using Python and OpenCV.",
-                longDesc: "Built a complete face recognition pipeline including face detection, encoding generation, matching against known faces, and smooth multi-face tracking across video frames. Integrated with webcam input and achieved reliable performance on consumer hardware.",
-                category: "ml",
-                tech: ["Python", "OpenCV", "NumPy", "face_recognition", "Matplotlib"],
-                icon: "fa-user-check",
-                image: "https://picsum.photos/seed/facerecognition/800/500",
-                impact: "Successfully detected and tracked multiple faces in real time. Great learning experience in computer vision fundamentals and optimization techniques.",
-                github: "https://github.com/SamuelhaIIman",
-                demo: "#",
-                type: "Personal Project"
-            },
+            // {
+            //     id: 1,
+            //     title: "3D Interactive Portfolio",
+            //     shortDesc: "Immersive 3D web portfolio experience built with Three.js featuring interactive models, camera controls, and dynamic lighting.",
+            //     longDesc: "A fully interactive 3D portfolio website showcasing creative work. Users can explore a virtual space, rotate 3D objects, trigger particle effects, and enjoy smooth camera transitions powered by Three.js and GSAP. Built to push the boundaries of what's possible in the browser.",
+            //     category: "web",
+            //     tech: ["JavaScript", "Three.js", "WebGL", "GSAP", "HTML5", "CSS3"],
+            //     icon: "fa-cube",
+            //     image: "https://picsum.photos/seed/3dportfolio/800/500",
+            //     impact: "Demonstrated advanced front-end capabilities and creative coding skills. Served as a strong portfolio piece highlighting WebGL performance tuning.",
+            //     github: "https://github.com/SamuelhaIIman",
+            //     demo: "#",
+            //     type: "Personal Project"
+            // },
+            // {
+            //     id: 2,
+            //     title: "Face Recognition & Tracking System",
+            //     shortDesc: "Real-time computer vision app that detects, recognizes, and tracks faces in live video streams using Python and OpenCV.",
+            //     longDesc: "Built a complete face recognition pipeline including face detection, encoding generation, matching against known faces, and smooth multi-face tracking across video frames. Integrated with webcam input and achieved reliable performance on consumer hardware.",
+            //     category: "ml",
+            //     tech: ["Python", "OpenCV", "NumPy", "face_recognition", "Matplotlib"],
+            //     icon: "fa-user-check",
+            //     image: "https://picsum.photos/seed/facerecognition/800/500",
+            //     impact: "Successfully detected and tracked multiple faces in real time. Great learning experience in computer vision fundamentals and optimization techniques.",
+            //     github: "https://github.com/SamuelhaIIman",
+            //     demo: "#",
+            //     type: "Personal Project"
+            // },
+            // {
+            //     id: 3,
+            //     title: "Neural Network from Scratch",
+            //     shortDesc: "Complete multi-layer neural network implemented in pure Python and NumPy, featuring backpropagation, multiple activation functions, and training visualization.",
+            //     longDesc: "Hand-built neural network without relying on TensorFlow or PyTorch. Includes dense layers, ReLU / Sigmoid / Softmax activations, cross-entropy loss, mini-batch gradient descent, and live training curve visualizations. Trained successfully on classification datasets.",
+            //     category: "ml",
+            //     tech: ["Python", "NumPy", "Matplotlib", "Pandas"],
+            //     icon: "fa-brain",
+            //     image: "https://picsum.photos/seed/neuralnet/800/500",
+            //     impact: "Deepened understanding of neural network internals. Excellent for technical interviews and teaching core machine learning concepts.",
+            //     github: "https://github.com/SamuelhaIIman",
+            //     demo: "#",
+            //     type: "Personal Project"
+            // },
             {
                 id: 3,
-                title: "Neural Network from Scratch",
-                shortDesc: "Complete multi-layer neural network implemented in pure Python and NumPy, featuring backpropagation, multiple activation functions, and training visualization.",
-                longDesc: "Hand-built neural network without relying on TensorFlow or PyTorch. Includes dense layers, ReLU / Sigmoid / Softmax activations, cross-entropy loss, mini-batch gradient descent, and live training curve visualizations. Trained successfully on classification datasets.",
-                category: "ml",
-                tech: ["Python", "NumPy", "Matplotlib", "Pandas"],
-                icon: "fa-brain",
-                image: "https://picsum.photos/seed/neuralnet/800/500",
-                impact: "Deepened understanding of neural network internals. Excellent for technical interviews and teaching core machine learning concepts.",
-                github: "https://github.com/SamuelhaIIman",
-                demo: "#",
-                type: "Personal Project"
-            },
-            {
-                id: 4,
                 title: "Ridesolutions Android App Modernization",
                 shortDesc: "Resolved critical Google Play compliance issues and dramatically improved performance for a legacy Android application (Android 15+).",
                 longDesc: "Led the technical resolution of 16KB page size compliance by analyzing native .so libraries with APK Analyzer, fixing alignment problems, restricting ABIs, and enabling legacy packaging. Also modernized legacy Java code to Kotlin and implemented Cloudflare security rules that eliminated fake account creation spam.",
                 category: "mobile",
                 tech: ["Kotlin", "Java", "Android Studio", "Gradle", "APK Analyzer", "Cloudflare"],
                 icon: "fa-mobile-alt",
+                image: "images/CABO_MATKUSTAJA.jpg",
+                impact: "App startup time cut from ~1200ms to ~600ms. Completely stopped weekly fake account spam. App successfully passed Google Play review for Android 15.",
+                github: "#",
+                demo: "https://play.google.com/store/apps/details?id=com.cabo.passengers",
+                type: "Professional Work @ Ridesolutions Oy"
+            },
+            {
+                id: 4,
+                title: "Ridesolutions Wepsite Fixes After Hacking",
+                shortDesc: "The website had texts removed and pictures changed to inaproper images. I found the original texts from Internet Archive.",
+                longDesc: "The website had texts removed and pictures changed to inaproper images. I found the original texts from Internet Archive.",
+                category: "web",
+                tech: ["Wordpress"],
+                icon: "fa-globe",
                 image: "images/cabo.png",
                 impact: "App startup time cut from ~1200ms to ~600ms. Completely stopped weekly fake account spam. App successfully passed Google Play review for Android 15.",
                 github: "#",
@@ -247,6 +260,20 @@ function initializeTailwind() {
                 demo: "https://www.lauranjalkahoito.com/",
                 type: "Professional Work @ Lauran Jalkahoitola"
             },
+            // {
+            //     id: 7,
+            //     title: "Goldenshire",
+            //     shortDesc: "My own project that's aim is to use as a butler.",
+            //     longDesc: "My own project that's aim is to use as a butler.",
+            //     category: "mobile",
+            //     tech: ["Kotlin", "Java", "Android Studio", "Gradle", "APK Analyzer", "Cloudflare"],
+            //     icon: "fa-globe",
+            //     image: "images/",
+            //     impact: "Life easying app.",
+            //     github: "#",
+            //     demo: "",
+            //     type: "Personal Project"
+            // },
         ];
         
         function renderProjects(filteredProjects) {
